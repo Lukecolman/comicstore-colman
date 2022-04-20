@@ -868,12 +868,14 @@ letter-spacing: 0.2px;
 
 /*=========CONTACTO==========*/
 
+/*
 .contacto__grid {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: auto auto;
 
 }
+*/
 
 
 .contacto {
@@ -902,11 +904,13 @@ letter-spacing: 0.2px;
 }
 
 .contacto__maps {
+    margin: 20px 0px;
     grid-column: 1/4;
 }
 
 .contacto__direccion {
     grid-column: 4/6;
+    margin: 30px 0px;
 }
 
 
@@ -977,7 +981,7 @@ letter-spacing: 0.2px;
 }
 
 .contacto__direccion{
-    margin-left:    50px;
+    margin-left:    0px;
 
 }
 
@@ -1211,7 +1215,6 @@ letter-spacing: 0.2px;
             justify-content: center;
     }
     
-    }
     
 
 
@@ -1384,6 +1387,7 @@ letter-spacing: 0.2px;
 
         .contacto__direccion {
             grid-area: direccion;
+
     
         }
 

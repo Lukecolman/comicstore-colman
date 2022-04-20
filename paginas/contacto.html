@@ -27,43 +27,48 @@
     <header class="smallbanner">
         <img src="../imagenes/marvel-vs-dc-banner.jpg" alt="banner">
     </header>
-    
-    <section class="contacto contacto__grid">
-        <article class="contacto__form">
-            <h2>ESCRIBENOS</h2>
-            <form action="#" method="GET">
-                        <div>
-                            <input type="text" name="" id="nombre" placeholder="Nombre" class="contacto__form__txt">
-                        </div>
-                        <div>
-                            <input type="mail" name="" id="correo" placeholder="Email" class="contacto__form__txt">
-                        </div>
-                        <div>
-                            <textarea name="" id="comentario" placeholder="Dejanos tu mensaje" class="contacto__form__textarea"></textarea>
-                        </div>
-                        <br>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar">
-                    </form>
-                
-        </article>
 
-        <article class="contacto__img">
-            <img src="../imagenes/miles-morales.png" alt="1">
-        </article>
 
-        <article class="contacto__maps">
-            <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=es&amp;q=20%20W%2034th%20St,%20New%20York,%20NY%2010001,%20Estados%20Unidos+(Comic%20Store)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="400" frameborder="0"><a href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a></iframe></div>
-        </article>
-        <article class="contacto__direccion">
-            <h2>TE ESPERAMOS</h2>
-            <ul>
-                <li>contactofalso@gmail.com</li>
-                <li>+0303456</li>
-                <li>Calle Falsa 123 - Springfield</li>
-            </ul>
-        </article>
+    <section class="container-fluid">
+        <div class="row">
+            <article class="contacto__form col-md-8 col-sm-12">
+                <h2>ESCRIBENOS</h2>
+                <form action="#" method="GET">
+                            <div>
+                                <input type="text" name="" id="nombre" placeholder="Nombre" class="contacto__form__txt">
+                            </div>
+                            <div>
+                                <input type="mail" name="" id="correo" placeholder="Email" class="contacto__form__txt">
+                            </div>
+                            <div>
+                                <textarea name="" id="comentario" placeholder="Dejanos tu mensaje" class="contacto__form__textarea"></textarea>
+                            </div>
+                            <br>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+                        </form>
+                    
+            </article>
 
+            <article class="contacto__img col-md-3 d-none d-md-block  ">
+                <img src="../imagenes/miles-morales.png" alt="1">
+            </article>
+        </div>
+
+        <div class="row">
+            <article class="contacto__maps order-12 order-md-3 col-md-9 col-xs-12 ">
+                <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=es&amp;q=20%20W%2034th%20St,%20New%20York,%20NY%2010001,%20Estados%20Unidos+(Comic%20Store)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="400" frameborder="0"><a href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a></iframe></div>
+            </article>
+
+            <article class="contacto__direccion order-4 col-sm-12 col-md-3  text-center text-md-left ">
+                <h2>TE ESPERAMOS</h2>
+                <ul>
+                    <li>contactofalso@gmail.com</li>
+                    <li>+0303456</li>
+                    <li>Calle Falsa 123 - Springfield</li>
+                </ul>
+            </article>
+        </div>
 
 
     </section>
