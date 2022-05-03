@@ -1,0 +1,60 @@
+/*////////////////////////////////*/
+
+/*============== BRUCE BANNER =================*/
+.brucebanner {
+    display: inline-block;
+    max-height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        align-self: center;
+        width: 100%;
+    }
+}
+
+/*=========SMALL BANNER==========*/
+
+.smallbanner {
+    @extend .brucebanner;
+    max-height: 300px;
+
+}
+
+/*===============BANNERFOOTER===================*/
+
+
+
+
+.bannerfooter {
+    width: 100%;
+    height: 800px;
+    /*testeando el clear*/
+    clear: both;
+    background-image: url(../imagenes/thebatman.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+
+    article {
+        position:relative;
+        bottom: -88%;
+        text-align: center;
+    }
+    
+
+}
+
+
+.batiboton {
+    font-size: 1.5vw;
+    font-weight: 900;
+    text-align: center;
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+    right: 0;
+
+}
+

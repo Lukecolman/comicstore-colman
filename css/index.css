@@ -1,0 +1,400 @@
+/*============== LISTA DE COMICS =================*/
+.comicsrelacionados {
+  margin-top: 90px;
+}
+
+/*scoll*/
+.listadecomics::-webkit-scrollbar {
+  height: 7px;
+  cursor: pointer;
+}
+
+.listadecomics::-webkit-scrollbar-track {
+  background-color: lightgrey;
+}
+
+.listadecomics::-webkit-scrollbar-thumb {
+  background: red;
+  width: 10px;
+}
+
+/*-----*/
+.listadecomics {
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90%;
+  overflow-x: scroll;
+}
+
+.listadecomics ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: visible;
+  padding: 0;
+}
+
+.listadecomics li {
+  font-weight: 800;
+  -webkit-transition: margin-left 4s;
+  transition: margin-left 4s;
+  width: 200px;
+  margin: 0px 20px 20px 0px;
+}
+
+.listadecomics li span {
+  font-size: 12px;
+  color: grey;
+}
+
+.listadecomics img {
+  width: 150px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  /*animacion en hover*/
+}
+
+.listadecomics img:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+/*============== COMIC DESTACADO =================*/
+.comicdestacado {
+  margin-top: 150px;
+  margin-bottom: 130px;
+  height: 490px;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url(../imagenes/Dr-strange-bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #373F41;
+}
+
+.comicdestacado h1 {
+  color: white;
+  font-weight: 1000;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+}
+
+.comicdestacado .comicdestacado__editorial {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.comicdestacado .comicdestacado__text {
+  color: white;
+  width: 50%;
+  margin-left: 160px;
+  position: relative;
+  top: 140px;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+}
+
+.comicdestacado .comicdestacado__text:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.comicdestacado .comicdestacado__img {
+  width: 50%;
+}
+
+.comicdestacado img {
+  width: 380px;
+  float: right;
+  margin-right: 130px;
+  margin-top: -230px;
+  -webkit-box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+  /*animacion de zoom*/
+}
+
+.comicdestacado img:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-box-shadow: 0 15px 30px -8px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 15px 30px -8px rgba(0, 0, 0, 0.8);
+}
+
+/*===============SUPER-BLOG===================*/
+/*
+.blogcontainer {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+
+/*==posteodestacado== */
+/*
+article.posteodestacado {
+    max-width: 66.66%;
+    overflow: hidden;
+    height: 525px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.posteodestacado a img{
+    height:550px;
+}
+
+.posteodestacado a h3{
+        margin-top: -90px;
+    padding-left: 115px;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+
+.posteodestacado a h3:hover{
+    color: #e62429;
+}
+
+
+/*==post==*/
+/*
+article.post {
+    background-color: #f8f8f8;
+    max-width: 32%;
+    height: 525px;
+    overflow: hidden;
+
+}
+
+.post a img{
+    max-height: 303px;
+    
+}
+
+
+/*==postfooter==*/
+/*
+.postfooter {
+    padding: 5%;
+    
+}
+.postfooter h5{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
+    font-weight: 800;
+}
+
+
+/*==margin posts==*/
+/*
+.post, .posteodestacado{
+    margin:0px 3px 15px 3px;
+}
+*/
+/*LO MISMO PERO EN GRID / CREO / */
+.blog h2 {
+  font-size: 50px;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.blog h2:hover {
+  color: #e62429;
+}
+
+.blog img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog .post img {
+  height: 45%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogcontainer {
+  margin: 0 auto;
+  max-width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.33% 33.33% 33.33%;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+  -ms-grid-rows: 1f 1f 1f 1f 1f 1f 1f 1f 1f 1f 1f 1f;
+      grid-template-rows: 1f 1f 1f 1f 1f 1f 1f 1f 1f 1f 1f 1f;
+  grid-gap: 15px 7px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogcontainer h5 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.blogcontainer span {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #292929;
+}
+
+.blogcontainer .post img {
+  height: 250px;
+}
+
+.blogcontainer .post1 {
+  display: none;
+}
+
+.blogcontainer .post2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.blogcontainer .post3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
+}
+
+.blogcontainer .post4 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
+}
+
+.blogcontainer .post5 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
+}
+
+.blogcontainer .post6 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  grid-row: 7/9;
+}
+
+.blogcontainer .post7 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  grid-row: 7/9;
+}
+
+.blogcontainer .post8 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  grid-row: 7/9;
+}
+
+.posteodestacado {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.posteodestacado img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.posteodestacado h3 {
+  position: relative;
+  bottom: 13%;
+  left: 10px;
+  color: white;
+  margin-bottom: 0;
+}
+
+/*==post==*/
+article.post {
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.post a img {
+  max-height: 303px;
+}
+
+/*==postfooter==*/
+.postfooter {
+  padding: 5%;
+}
+
+.postfooter h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  font-weight: 800;
+}
+
+/*asdasdasd
+
+
+
+asdasdsadas*/

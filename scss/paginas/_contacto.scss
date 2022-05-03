@@ -1,0 +1,130 @@
+/*=========CONTACTO==========*/
+
+/*
+.contacto__grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto;
+
+}
+*/
+
+/* ACA ESTA EL MAPS*/
+$styles: (
+    'grey':#202020,
+    'red': #e62429,
+    'light': #bcbcbc,
+    'borde': 1px solid #bcbcbc
+    );
+
+
+
+
+
+.contacto__form {
+    // grid-column: 1/4 ;
+    text-align: center;
+    margin: 25px 0 20px 0;
+
+    form{
+        margin-top: 30px;
+        margin-bottom: 55px; 
+
+        .contacto__form__txt {
+            width: 70%;
+            height: 10px;
+            color: map-get($map: $styles, $key: "grey");
+            border: map-get($map: $styles, $key: "borde");
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+            font-size: large;
+        }
+        
+        .contacto__form__textarea {
+            width: 70%;
+            height: 150px; 
+            color: map-get($map: $styles, $key: "grey");
+            border: map-get($map: $styles, $key: "borde");
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+            font-size: medium;
+            resize: none;
+        }
+        
+        & [type=submit] { 
+            background-color: map-get($map: $styles, $key: "red");;
+            color: white;
+            padding: 5px 30px;
+            border: none;
+            font-size: 12px;
+            font-weight: 900;
+            
+        }     
+        & [type=submit]:hover {
+            cursor: pointer;
+        }
+        
+        & [type=reset] { 
+            background-color: $clg;
+            color: white;
+            padding: 5px 7px;
+            border: none;
+            font-size: 12px;
+            font-weight: 900;
+        }     
+        & [type=reset]:hover {
+            cursor: pointer;
+        }
+        
+        h2 {
+            font-size: 30px;
+            font-weight: 900;
+            color: map-get($map: $styles, $key: "grey");
+            padding-top: 20px;
+            margin-bottom: 50px;
+        
+        }
+    }
+}
+
+.contacto__img {
+    // grid-column: 4/6;
+    text-align: center;
+    
+    img{
+        overflow: hidden;
+        height: 450px;
+    
+    }
+}
+
+
+
+.contacto__maps {
+    margin: 20px 0px;
+    // grid-column: 1/4;
+}
+
+.contacto__direccion {
+    // grid-column: 4/6;
+    margin: 30px 0px;
+
+    h2{
+        font-size: 30px;
+        font-weight: 900;
+        color: map-get($map: $styles, $key: "grey");
+    
+    }
+
+    ul {
+        padding-top: 30px;
+        line-height: 250%;
+        font-weight: 600;
+        padding-left: 0;
+    }
+
+}
+
+

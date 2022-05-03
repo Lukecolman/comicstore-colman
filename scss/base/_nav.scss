@@ -1,0 +1,67 @@
+/*============== NAV =================*/
+$clg:#202020;
+$clr: #e62429;
+$clc: #bcbcbc;
+
+
+
+#nav {
+    background-color: $clg;
+    font-weight: 900;
+    width: 100%;
+    display: inline-block;
+    height: 55px;
+    position: fixed;
+    z-index: 9;
+
+    img{
+        margin-left: 45px;
+        margin-top: 8px;
+        height: 40px;
+        z-index: 15;
+    }
+
+    ul {
+        float: right;
+        display: block;
+        margin-right: 40px;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            padding-top: 17px;
+        
+        }
+    }
+    a{ 
+        color: white;
+
+        &:hover{
+            color: $clr;
+        }
+    }
+
+
+}
+
+
+.nav-hamburguesa {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    position: fixed;
+    right: 45px;
+    top: 0;
+    margin-top: 8px ;
+    display: none;
+    float:right;
+    z-index: 3;    
+}
+
+.nav-activador-hamburguesa{
+    display: none;
+    z-index: 4;
+
+
+}

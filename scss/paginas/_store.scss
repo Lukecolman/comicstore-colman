@@ -1,0 +1,56 @@
+/*////////////////////////////////*/
+
+/*=========STORE==========*/
+
+.comicstore h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.lista_store {
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+
+    ul {
+        gap: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: visible;
+        padding: 0;
+        justify-content: center;
+    }
+
+    li {
+        font-weight: bold;
+        width: 170px;
+        margin: 0px 20px 20px 0px;
+
+        .editorial{
+            font-size: 12px;
+            color: grey;
+        }
+    }
+
+    img{
+        width: 180px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+        transition: 0.3s ease-in-out;
+        transform: translateY(0px);
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+
+    
+}
+

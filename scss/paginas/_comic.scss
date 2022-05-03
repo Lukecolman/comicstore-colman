@@ -1,0 +1,98 @@
+/*////////////////////////////////*/
+
+/*=========COMIC==========*/
+
+
+/*=========BANNER COMIC==========*/
+
+.comicbanner {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+
+    img{
+        align-self: center;
+        width: 100%;
+        filter: brightness(.4);
+    }
+}
+
+
+
+/*== MAIN COMIC ==*/
+
+.comic-main {
+    margin-top: -400px;
+    flex-direction: row;
+    margin-bottom: 250px;
+    width: 100%;
+    
+
+    article {
+        justify-content: center;
+    }
+    
+    .comic-main-img {
+        z-index: 1;
+        margin-top: 6rem;
+        height: 550px;
+        box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+    }
+    
+    .comic-main-box{
+        display: flex;
+        flex-wrap: wrap;   
+        justify-content: center;
+        
+    }
+
+    h1{
+        color: white;
+        font-weight: 1000;
+        font-size: 64px;
+        line-height: 70px;
+        letter-spacing: 0.2px;
+    }
+
+    .comic-main-text {
+        color: white;
+        max-width: 756px;
+        padding-left: 30px;
+        position: relative;
+        top: 140px;
+    }
+
+    .botoncompra { 
+        margin-top: 50px;   
+        width: 80px;
+        display: block;
+        background-color: #e62429;
+        padding: 5px 7px;
+        border: none;
+        font-size: 12px;
+        font-weight: 900;
+
+        &:link{
+            color: white;
+        }
+
+        &:hover{
+            background-color: #202020;
+        }
+    }
+    
+    .sinopsis {
+        color: #202020;
+        padding-top: 50px;
+    }
+
+}
+
+
+
+.comicsrelacionados h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+

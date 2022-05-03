@@ -1,0 +1,21 @@
+/*/////////////////////////*/
+
+/*-----BOOTSTRAP MODS-----*/
+
+.pagination {
+    font-weight:700 ;
+    border: nones;
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+.page-link, .page-link:visited {
+    border: 0;
+    color: #e62429;
+
+    &:hover {
+        color: #202020;
+        background-color: white;
+        border-color: white;
+        }
+}
+

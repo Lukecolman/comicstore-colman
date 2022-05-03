@@ -1,0 +1,42 @@
+/*RESET*/
+@import "./base/resets";
+
+
+/*NAV & FOOTER*/
+@import "./base/nav";
+@import "./base/footer";
+
+
+/*BANNERS*/
+/*ACA USE EL EXTEND*/
+@import "./base/banners";
+
+
+/*INDEX*/
+@import "./paginas/index.scss";
+
+/*SUPER BLOG*/
+
+/*STORE*/
+@import "./paginas/store";
+
+/*COMIC*/
+@import "./paginas/comic";
+
+/*BLOG-POST*/
+/*ACA ESTA EL MIXIN*/
+@import "./paginas/blogpost";
+
+/*CONTACTO*/
+/*ACA ESTA EL MAPS*/
+@import "./paginas/contacto";
+
+
+
+
+
+/*BOOTSTRAP MODS*/
+@import "./base/bootstrap_mods";
+
+/*MEDIA QUERIES*/
+@import "./base/mediaq";

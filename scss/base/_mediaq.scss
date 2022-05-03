@@ -1,0 +1,688 @@
+/*///////////////////////////////*/
+/* ========MEDIA-QUERIES=======*/
+
+
+
+@media (max-width: 1320px){
+
+    .comicdestacado img {
+
+        margin-top: -316px ;
+        margin-right: 6%;
+    }
+    .comicdestacado .comicdestacado__text {
+        margin-left: 6%;
+    }
+
+    .comicdestacado h1 {
+            font-size: 65px;
+        }
+    
+
+
+}
+
+@media (max-width: 1232px){
+    /*=========BLOGPOST==========*/
+
+    /*-----------BLOG BANNER---------*/
+    .blogpost_banner {
+        height: 350px;
+    }
+
+    .blogpost_banner_text {
+        top: 120px;
+    }
+
+    .blog_aside {
+        float: none;
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+
+    .blogpost_container {
+        margin-right: 10%;
+
+    }
+    
+
+    }
+
+@media (max-width: 1114px){
+    .comic-main {
+
+        margin-bottom: 9rem;
+
+        h1{
+            color:#202020;
+        }
+        
+
+        span{
+            color: #202020;
+        }
+        
+        .comic-main-text {
+            top: 70px;
+            margin-right: 10%;
+            margin-left: 10%;
+            padding: 0;
+        }
+
+        .botoncompra {
+            margin-top: 15px;
+        }
+
+        .sinopsis {
+            padding-top: 30px;
+        }
+
+    }
+
+}
+
+@media (max-width: 1024px){
+    /* navbar intento de hamburguesa */
+    #nav {
+        display: inline-block;
+        z-index: 100;
+
+
+    }
+    
+    #nav img{
+        margin-left: 45px;
+        margin-top: 8px;
+        height: 40px;
+        z-index: 15;
+
+    }
+    
+    
+    #nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100%);
+        overflow-y: auto;
+        position: fixed;        
+        left: 0%;
+        background-color: #202020;
+        text-align: center;
+        padding: 30px 0;
+        z-index: -1;
+
+
+    }
+
+    .menu {
+        visibility: hidden;   
+        transition-timing-function: cubic-bezier(10,2,3,1);
+        transform: translatey(-50rem);
+        transition: 0.5s;
+    }
+
+    
+
+    
+
+
+    #nav ul li {
+        z-index: 2;
+        margin: 0 0px;
+        padding-top: 27px;
+        padding: 20px 20px;
+    
+
+    }
+    .nav-activador-hamburguesa{
+        display: block;
+        z-index: 10;
+        position: absolute;
+        right: 45px;
+        top: 0;
+        margin-top: 13px ;
+        cursor: pointer;
+        width: 34px;
+        height: 34px;
+        opacity: 0;
+    
+    }
+    
+    .nav-hamburguesa {
+        display: block;
+    }
+
+    .nav-activador-hamburguesa:checked ~ .menu {
+        visibility: visible;
+        transform: translateX(0rem);
+    }
+
+
+    /*============== BRUCE BANNER =================*/
+    .brucebanner { 
+        height: 6%;
+        }
+    
+        .brucebanner img {
+            padding-top: 53px;
+        }
+
+
+    /*============== LISTA DE COMICS =================*/
+
+    .comicsrelacionados {
+        margin-top: 40px;
+    }
+    
+    /*============== COMIC DESTACADO =================*/
+
+    .comicdestacado {
+    margin-top: 65px;
+    height: 570px;
+    width: 100%;
+    margin-bottom: 125px;
+    
+    }
+
+    .comicdestacado article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comicdestacado .comicdestacado__text {
+        width: 100%;
+        margin-top: 5%;
+        margin-left: auto;
+        top: auto;
+        text-align: center;
+
+    }
+
+        .comicdestacado 
+
+    .comicdestacado__text {
+        width: 100%;
+        margin-left: 0px;
+        position: relative;
+
+        h1{
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: 0.2px;
+            }
+
+
+        .comicdestacado__editorial {
+            padding-left: 0;
+
+        }
+    }
+
+    .comicdestacado .comicdestacado__img {
+        width: 100%;
+    }
+
+    .comicdestacado img {
+        width: 320px;
+        margin-right: auto;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-top: 30px;
+    }
+
+
+    /*==postfooter==*/
+
+    .postfooter {
+        padding: 5%;
+        
+    }
+    .postfooter h5{
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-bottom: 0.5em;
+        font-weight: 800;
+    }
+
+
+    /*==margin posts==*/
+    .post, .posteodestacado{
+        margin:0px 3px 15px 3px;
+    }
+
+    /*============== STORE =================*/
+    
+    .comicstore h1 {
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    
+    .lista_store ul {
+            justify-content: center;
+    }
+    
+
+    /*BLOG*/
+    .blog {
+
+
+        h2 {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    .blogcontainer {
+        margin: 0 auto;
+        max-width: 90%;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 1f 1f 1f 1f 1f 1f ;
+        grid-gap: 15px 7px;
+        justify-content: space-between;
+        
+        .post1{
+            display: block;
+            grid-column: 1/1;
+            grid-row: 1/1;
+        }
+
+        .post2 {
+            grid-column: 2/2;
+            grid-row: 1/1;
+        }
+        
+        .post3 {
+            grid-column: 1/1 ;
+            grid-row: 2/2;
+        }
+        
+        .post4 {
+            grid-column: 2 / 2 ;
+            grid-row: 2/2;
+        }
+        
+        .post5 {
+            grid-column: 1 / 1 ;
+            grid-row: 3/3;
+        }
+        
+        .post6 {
+            grid-column: 2 / 2 ;
+            grid-row: 3/3;
+        }
+        
+        .post7 {
+            grid-column: 1 / 1 ;
+            grid-row: 4/4;
+        }
+        
+        .post8 {
+            grid-column: 2 / 2 ;
+            grid-row: 4/4;
+        }
+    
+    }
+
+    .posteodestacado {
+        display: none;
+        grid-column: 1 / 3;
+        grid-row: 1/1;
+    
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        h3 {
+            position: relative;
+            bottom: 13%;
+            left: 10px;
+            color: white;
+            margin-bottom: 0;
+        }
+    }
+
+
+
+        /* footer */
+        .footer__container {
+            padding:  50px 0px;
+        }
+        .footer__logo {
+            display: none;
+        }
+        .footer__newsletter{
+            z-index: 0;
+            margin-left: -70px;
+        }
+    
+            /*===============FOOTER===================*/
+            #footer {
+                height: 250px;
+                display: flex;
+                flex-direction: column
+            }
+        
+            .footer__container {
+                flex-direction: column;
+            }
+        
+            .footer__newsletter{
+                text-align: center;
+                margin-left: 0;
+            }
+        
+    
+            .footer__redes{
+                text-align: center;
+                margin-top: 30px;
+            }
+        
+            .footer__redes p {
+                padding-right: 0%;
+            }
+        
+            .footer__redes ul{
+                display: inline-flex;
+                align-items: center;
+                justify-items: end;
+                padding-left: 0;
+                padding-top: 20px;
+            }
+
+
+}
+
+
+
+@media (max-width: 768px){
+
+    
+    /*---------------------------------*/
+    
+    .blog h2 {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 900;
+        color: black;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+
+    .blogcontainer {
+        margin: 0 auto;
+        max-width: 95%;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 1f 1f 1f 1f 1f 1f ;
+        grid-gap: 15px 0px;
+        justify-content: space-between;
+
+        h5{
+            font-size: 28px;
+            font-weight: 900;
+        }
+    
+        span{
+            font-size: 17px;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgb(41, 41, 41)
+    
+    
+        }
+        
+        .post{ 
+            img {
+                height: 350px;
+            }
+        }
+
+        .post1{
+            display: block;
+            grid-column: 1/3;
+            grid-row: 1/1;
+        }
+
+        .post2 {
+            grid-column: 1/3;
+            grid-row: 2/2;
+        }
+        
+        .post3 {
+            grid-column: 1/3 ;
+            grid-row: 3/3;
+        }
+        
+        .post4 {
+            grid-column: 1/3;
+            grid-row: 4/4;
+        }
+        
+        .post5 {
+            grid-column: 1/3;
+            grid-row: 5/5;
+        }
+        
+        .post6 {
+            grid-column: 1/3;
+            grid-row: 6/6;
+        }
+        
+        .post7 {
+            grid-column: 1/3;
+            grid-row: 7/7;
+        }
+        
+        .post8 {
+            grid-column: 1/3;
+            grid-row: 8/8;
+        }
+    
+    }
+    .bannerfooter {
+        display: none;
+    }
+
+    /*=========BLOGPOST==========*/
+
+    /*-----------BLOG BANNER---------*/
+    .blogpost_banner {
+        height: 280px;
+    }
+
+    .blogpost_banner_text h1{
+        font-size: 3rem;
+    }
+
+    .blogpost_banner_text {
+        top: 120px;
+        max-width: 80%;
+    }
+
+    .blogpost_info {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+}
+
+@media (max-width: 696px){
+    /* contacto*/
+    .contacto__grid {
+        display: grid;
+        grid-template-areas: "form form form form form"
+                            "direccion direccion direccion imagen imagen"
+                            "maps maps maps maps maps"
+        ;
+        }
+        .contacto__img {
+            grid-area: imagen;  
+        }
+        .contacto__img img{
+            height: 250px;
+            margin-top: -20px;
+        }
+
+        .contacto__form {
+            grid-area: form;
+        }
+
+        .contacto__direccion {
+            grid-area: direccion;
+
+    
+        }
+
+        .contacto__maps{
+            grid-area: maps;
+        }
+
+        .blogcontainer {
+            grid-template-columns: 100%;
+            grid-template-rows:  1f 1f 1f 1f 1f 1f 1f 1f 1f 1f 1f 1f    ;
+            margin-bottom: 50px;
+        }
+    
+    
+        .posteodestacado {
+            grid-column: 1 / 2;
+            grid-row: 1/3;
+        }
+        .posteodestacado h3 {
+            position: relative;
+            bottom: 13%;
+            left: 10px;
+            color: white;
+            margin-bottom: 0;
+        }
+        
+        .post2 {
+            grid-column: 1 / 2;
+            grid-row: auto;
+        }
+        
+        .post3 {
+            grid-column: 1 / 2;
+            grid-row: auto;
+        }
+        
+        .post4 {
+            grid-column: 1 / 2 ;
+            grid-row: auto;
+        }
+        
+        .post5 {
+            grid-column: 1 / 2;
+            grid-row: auto;
+        }
+        
+        .post6 {
+            grid-column: 1 / 2 ;
+            grid-row: auto;
+        }
+        
+        .post7 {
+            grid-column: 1 / 2;
+            grid-row: auto;
+        }
+        
+        .post8 {
+            grid-column: 1 / 2 ;
+            grid-row: auto;
+        }
+    
+        .bannerfooter {
+            display: none;
+        }
+
+    }
+
+@media (max-width: 480px){
+    .smallbanner {
+        height: 150px;
+    }
+    
+    .contacto__grid {
+        display: grid;
+        grid-template-areas: "form form form form form"
+                            "direccion direccion direccion direccion direccion"
+                            "maps maps maps maps maps";
+    }
+    .contacto__img {
+        display: none ;
+    }
+    .contacto__img img{
+        height: 250px;
+        margin-top: -20px;
+    }
+
+    .contacto__form {
+        grid-area: form;
+    }
+
+    .contacto__direccion {
+        grid-area: direccion;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: 0%;
+    }
+
+    .contacto__maps{
+        grid-area: maps;
+    }
+
+    .blogcontainer {
+        max-width: 95%;
+
+        h5{
+            font-size: 28px;
+            font-weight: 900;
+        }
+    
+        span{
+            font-size: 17px;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgb(41, 41, 41)
+    
+    
+        }
+        
+        .post{ 
+            img {
+                height: 230px;
+            }
+        }
+    }
+
+    /*=========BLOGPOST==========*/
+
+    /*-----------BLOG BANNER---------*/
+    .blogpost_banner {
+        height: 200px;
+    }
+
+    .blogpost_banner_text h1{
+        font-size: 2rem;
+    }
+
+    .blogpost_banner_text {
+        left: 5%;
+        top: 90px;
+        max-width: 90%;
+    }
+
+    .blogpost_info {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+}
