@@ -67,6 +67,7 @@ p {
   height: 55px;
   position: fixed;
   z-index: 9;
+  top: 0;
 }
 
 #nav img {
@@ -224,7 +225,7 @@ a:hover {
 /*============== BRUCE BANNER =================*/
 .brucebanner, .smallbanner {
   display: inline-block;
-  max-height: 600px;
+  max-height: 400px;
   width: 100%;
   overflow: hidden;
 }
@@ -1061,14 +1062,8 @@ article.post {
           flex-direction: row;
 }
 
-.blog_aside .blog_aside_img {
-  height: 75px;
-  width: 150px;
-  overflow: hidden;
-}
-
 .blog_aside img {
-  height: 110%;
+  width: 130px;
 }
 
 .blog_aside h5 {
@@ -1260,6 +1255,9 @@ article.post {
   }
   .comicdestacado h1 {
     font-size: 65px;
+  }
+  .banner_index_sm {
+    display: none;
   }
 }
 
@@ -1848,6 +1846,10 @@ article.post {
     font-size: 15px;
     line-height: 28px;
   }
+  /*----BLOGPOST-----*/
+  .blogpost_info iframe {
+    height: 300px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1859,6 +1861,15 @@ article.post {
   }
   .blog_tweet_large {
     height: 690px;
+  }
+  /*----comic-----*/
+  .comic-main h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  /*----BLOGPOST-----*/
+  .blogpost_info iframe {
+    height: 300px;
   }
 }
 
@@ -1931,5 +1942,8 @@ article.post {
   .blogpost_info {
     font-size: 15px;
     line-height: 28px;
+  }
+  .blogpost_info iframe {
+    height: 220px;
   }
 }

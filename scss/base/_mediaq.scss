@@ -17,9 +17,9 @@
     .comicdestacado h1 {
             font-size: 65px;
         }
-    
-
-
+        .banner_index_sm {
+            display:none;
+        }
 }
 
 @media (max-width: 1232px){
@@ -661,6 +661,13 @@
         line-height: 28px;
     }
 
+    /*----BLOGPOST-----*/
+.blogpost_info{
+    iframe{
+        height: 300px; 
+    }
+}
+
     }
 
 
@@ -677,6 +684,24 @@
     height: 690px;
 
 }
+
+/*----comic-----*/
+
+.comic-main{
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+/*----BLOGPOST-----*/
+.blogpost_info{
+    iframe{
+        height: 300px; 
+    }
+}
+
+
 }
 
 @media (max-width: 480px){
@@ -761,5 +786,12 @@
         font-size: 15px;
         line-height: 28px;
     }
+
+    .blogpost_info{
+        iframe{
+            height: 220px; 
+        }
+    }
+
 
 }
