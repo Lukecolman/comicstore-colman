@@ -40,7 +40,36 @@
                 <div class="comic-main-text">
                     <h1 class="comictitle">BATMAN - DETECTIVE #1</h1>
                     <span class="comicinfo">Marvel Comics - 2022</span>
-                    <a class="botoncompra" href="#">RESERVAR</a>
+
+                    <!--MODAL-->
+                    <div>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="botoncompra" data-toggle="modal" data-target="#myModal">RESERVAR</button>
+                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                        
+                            <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">RESERVA</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Reserva exitosa, gracias.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
                     <p class="sinopsis">
                         Comienza una historia épica que llevará a Batman a una aventura desgarradora y llena de acción por Europa en esta nueva miniserie de parte de los creadores superestrellas Tom Taylor y Andy Kubert. Una horrible tragedia en el Reino Unido envía un mensaje muy personal y mortal al Caballero Oscuro, ¡uno que sacará a Batman de Ciudad Gótica para ir a investigar! Pero desde el momento en que aterrice en Europa, Batman se enfrentará a una investigación difícil y adversarios inauditos, y como siempre encontrará la ayuda de un aliado, ¡todo mientras busca a un villano conocido como Equilibrio! ¡Nuevos villanos! ¡Nuevos aliados! ¡Inicia una emocionante aventura en el extranjero para el Caballero Oscuro, comenzando con una historia extra grande de 26 paginas!                    </p>    
                 </div>
@@ -49,56 +78,6 @@
     </section>
 
 
-<!-- ESTRUCTURA A TENER EN CUENTA A FUTURO
-    <section class="comicsrecomendados">
-        <h3>COMICS RECOMENDADOS</h3>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-    </section>
--->
 
 
     <section class="comicsrelacionados">
@@ -179,11 +158,26 @@
         </article>
     </section>
 
-    <section class="bannerfooter">
-        <article >
-            <a class="batiboton" href="../../paginas/comic.html">CONOCE AL CABALLERO DE LA NOCHE</a>
-        </article>
-    </section>
+    <div class="banner_footer">
+        <div class="img_footer">
+            <div class="row">
+            <div class="col-lg-3">
+                <div class="banner_footer_left"> <img src="../../imagenes/banner-footer/batman-left.png"> </div>
+            </div>
+            
+            <div class="col-lg-6 col-sm-12">
+                <a href="../comics/2batman-detective.html">
+                    <div class="banner_footer_center"> <img src="../../imagenes/banner-footer/batman-logo.png"> </div>
+                </a>
+            </div>
+            
+
+            <div class="col-lg-3">
+                <div class="banner_footer_right"> <img src="../../imagenes/banner-footer/batman-right.png"> </div>
+            </div>
+            </div>
+        </div>
+</div>
     
     
     <footer id="footer">

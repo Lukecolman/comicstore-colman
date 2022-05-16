@@ -33,6 +33,7 @@
         <a href="#"><img src="../../imagenes/the-us-captain-america5.jpg" alt="banner"></a>
     </header>
 
+
     <section class="comic-main">
         <article>
             <div class="comic-main-box">
@@ -40,7 +41,36 @@
                 <div class="comic-main-text">
                     <h1 class="comictitle">THE UNITED STATE OF CAPTAIN AMERICA #5</h1>
                     <span class="comicinfo">Marvel Comics - 2022</span>
-                    <a class="botoncompra" href="#">RESERVAR</a>
+
+                    <!--MODAL-->
+                    <div>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="botoncompra" data-toggle="modal" data-target="#myModal">RESERVAR</button>
+                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                        
+                            <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">RESERVA</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Reserva exitosa, gracias.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
                     <p class="sinopsis">
                         Después de que los ladrones de escudos liberan a un villano mortal, Bucky Barnes se une a un oficial de inteligencia de la fuerza aérea que podría saber cómo recuperar al villano, mientras John, Sam y Steve lo persiguen. Cuando sus aliados se meten en problemas, Bucky se ve obligado a enfrentar sus complicados sentimientos acerca de retomar el manto del Capitán América nuevamente. La Red de Capitanes se une en una última batalla épica para evitar que el escudo se use con fines nefastos. ¡No te pierdas el trepidante final de esta innovadora miniserie!
                     </p>    
@@ -49,59 +79,7 @@
         </article>
     </section>
 
-
-<!-- ESTRUCTURA A TENER EN CUENTA A FUTURO
-    <section class="comicsrecomendados">
-        <h3>COMICS RECOMENDADOS</h3>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-        <article class="comic">
-            <a href="#">
-                <img src="#" alt="comic">
-                <h6 class="titulocomic">SPIDER-MAN: NO WAY HOME #1</h6 class="titulocomic">
-                <span class="editorial">Marvel Comics</span>
-                <span class="precio">$2000</span>
-                <a href="#" class="botondecompra">Comprar ahora</a>
-            </a>
-        </article>
-    </section>
--->
-
-
+    
     <section class="comicsrelacionados">
         <h2>COMICS RELACIONADOS</h2>
         <article class="listadecomics">
@@ -180,11 +158,26 @@
         </article>
     </section>
 
-    <section class="bannerfooter">
-        <article >
-            <a class="batiboton" href="../../paginas/comic.html">CONOCE AL CABALLERO DE LA NOCHE</a>
-        </article>
-    </section>
+    <div class="banner_footer">
+        <div class="img_footer">
+            <div class="row">
+            <div class="col-lg-3">
+                <div class="banner_footer_left"> <img src="../../imagenes/banner-footer/batman-left.png"> </div>
+            </div>
+            
+            <div class="col-lg-6 col-sm-12">
+                <a href="../comics/2batman-detective.html">
+                    <div class="banner_footer_center"> <img src="../../imagenes/banner-footer/batman-logo.png"> </div>
+                </a>
+            </div>
+            
+
+            <div class="col-lg-3">
+                <div class="banner_footer_right"> <img src="../../imagenes/banner-footer/batman-right.png"> </div>
+            </div>
+            </div>
+        </div>
+</div>
     
     
     <footer id="footer">

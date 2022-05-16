@@ -19,3 +19,32 @@
         }
 }
 
+.botoncompra {
+    color: white;
+    
+    &::selection{
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    &:focus {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    &:active {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.modal-title, .modal-body {
+    color: #202020;
+}
+
+.btn-default {
+    &:hover {
+        color: #e62429;
+    }
+}
